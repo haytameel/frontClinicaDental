@@ -1,0 +1,224 @@
+.login-page {
+    background-color: #081b29;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-page div {
+    height: 60%;
+
+}
+
+.login-izq {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom-left-radius: 60px;
+    border-top-left-radius: 60px;
+    margin-left: 40px;
+    text-align: center;
+    background-color: #16232d;
+    padding-right: 20px;
+
+
+}
+
+.login-izq h1 {
+    padding-bottom: 20px;
+}
+
+.login-der {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #a4c0c3;
+    text-align: center;
+    border-bottom-right-radius: 60px;
+    border-top-right-radius: 60px;
+    margin-right: 40px;
+
+}
+
+.login-der form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-der form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #081b29;
+    color: white;
+}
+
+.login-der h2 {
+    color: #081b29;
+    font-weight: bold;
+}
+
+.login-der h5 {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    color: #081b29;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.login-der h5 a {
+    color: #081b29;
+    text-decoration: none;
+}
+
+/*EFECTO DEL BOTON*/
+.login-der .boton {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 10px 0px;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #081b29;
+    border: 2px solid #00abf0;
+    background-color: #00abf0;
+    transition: 0.5s;
+    font-size: 18px;
+
+
+}
+
+.boton:hover {
+    color: #ffffff;
+    border: 2px solid #00abf0;
+
+}
+
+
+.boton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #081b2938;
+    transition: width 0.6s ease-in-out;
+}
+
+.boton:hover::before {
+    width: 100%;
+
+}
+
+@media (max-width: 910px) {
+
+
+    .login-izq h1 {
+        font-size: 34px;
+    }
+
+    .login-izq p {
+        font-size: 16px;
+    }
+
+    .login-der form input {
+        padding: 5px;
+        width: 80%;
+    }
+
+    .login-izq {
+        padding-right: 10px;
+    }
+
+    .login-der .boton {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 620px) {
+
+    .login-izq h1 {
+        font-size: 28px;
+    }
+
+    .login-izq p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 540px) {
+
+    .login-izq h1 {
+        font-size: 16px;
+    }
+
+    .login-der h2 {
+        font-size: 22px;
+    }
+
+    .login-der form input {
+        margin: 10px;
+    }
+
+
+    .login-der .boton {
+        font-size: 14px;
+        margin: 8px;
+
+    }
+
+    .login-der h5 a {
+        text-decoration-line: underline;
+        text-decoration-thickness: 2px;
+
+    }
+
+    .login-izq p {
+        display: none;
+
+    }
+}
+
+
+
+
+/*
+@media (min-width: 750px) {/*de 750 para arriba
+    .login-page {
+        height: 100vh; 
+    }
+}
+
+
+.login-page {
+    background-color: #081b29;  
+}
+
+.login-page h5 {
+    color: #081b29;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.login-page .p-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-page h4 {
+    color: #081b29;
+    font-weight: 600;
+}
+*/

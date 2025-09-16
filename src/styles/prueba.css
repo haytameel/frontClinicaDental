@@ -1,0 +1,72 @@
+/* Contenedor del navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d6efd; /* azul clínico */
+  padding: 0.5rem 1rem;
+  color: white;
+  position: relative;
+}
+
+/* Logo / brand */
+.navbar .brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/* Links del navbar */
+.navbar .nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.navbar .nav-links a:hover {
+  background-color: #ffd700;
+  color: black;
+}
+
+/* Botón hamburguesa (solo en móvil) */
+.navbar .hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.navbar .hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #0d6efd;
+  }
+  
+  .navbar .nav-links.show {
+    display: flex;
+  }
+  
+  .navbar .hamburger {
+    display: flex;
+  }
+}
