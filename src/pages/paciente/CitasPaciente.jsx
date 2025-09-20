@@ -12,7 +12,7 @@ function CitasPaciente() {
     useEffect(() => {
         const token = localStorage.getItem('token');
 
-        axios.get("http://localhost:8080/citas", {
+        axios.get("http://clinicadentaldocker.onrender.com/citas", {
             headers: {
                 Authorization: `Bearer ${token}`
             }
@@ -30,7 +30,7 @@ function CitasPaciente() {
     useEffect(() => {
         const token = localStorage.getItem('token');
 
-        axios.get("http://localhost:8080/citas/peticiones", {
+        axios.get("http://clinicadentaldocker.onrender.com/citas/peticiones", {
             headers: {
                 Authorization: `Bearer ${token}`
             }

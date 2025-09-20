@@ -38,7 +38,7 @@ export const SignupForm = () => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:8080/api/auth/signup", formData)
+      .post("http://clinicadentaldocker.onrender.com/api/auth/signup", formData)
       .then((response) => {
         console.log("Usuario registrado:", response.data);
         setSuccessMsg("Cuenta creada con éxito. \t Ahora puedes iniciar sesión.");

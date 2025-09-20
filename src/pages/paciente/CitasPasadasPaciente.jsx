@@ -11,7 +11,7 @@ export const CitasPasadasPaciente = () => {
     useEffect(() => {
         const token = localStorage.getItem('token');
 
-        axios.get("http://localhost:8080/citas/pasadas", {
+        axios.get("http://clinicadentaldocker.onrender.com/citas/pasadas", {
             headers: {
                 Authorization: `Bearer ${token}`
             }
