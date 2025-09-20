@@ -29,7 +29,7 @@ export const MiPerfilPaciente = () => {
   axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
 
   useEffect(() => {
-    axios.get("http://clinicadentaldocker.onrender.com/paciente/miperfil")
+    axios.get("https://clinicadentaldocker.onrender.com/paciente/miperfil")
       .then((response) => {
         setPerfil(response.data.data);
         setSuccessMsg("Perfil encontrado con éxito.");
@@ -116,7 +116,7 @@ export const MiPerfilPaciente = () => {
     axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
     useEffect(() => {
         axios
-            .get("http://clinicadentaldocker.onrender.com/paciente/miperfil")
+            .get("https://clinicadentaldocker.onrender.com/paciente/miperfil")
             .then((response) => {
                 console.log("Response completa:", response);
                 console.log("Solo data:", response.data);

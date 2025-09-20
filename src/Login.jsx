@@ -28,7 +28,7 @@ export const Login = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        axios.post('http://clinicadentaldocker.onrender.com/api/auth/login', formData)
+        axios.post('https://clinicadentaldocker.onrender.com/api/auth/login', formData)
             .then(response => {
                 console.log(response.data);
                 //guardamos el token

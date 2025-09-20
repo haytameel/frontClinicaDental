@@ -15,7 +15,7 @@ export const PedirCita = () => {
     useEffect(() => {
         const token = localStorage.getItem('token');
 
-        axios.get("http://clinicadentaldocker.onrender.com/citas", {
+        axios.get("https://clinicadentaldocker.onrender.com/citas", {
             headers: {
                 Authorization: `Bearer ${token}`
             }
@@ -145,7 +145,7 @@ export const PedirCita = () => {
                                     estado: nuevaCita.estado,  // "PENDIENTE" lo tenemos por defecto
                                     username: user  // usuario del paciente que pide la cita
                                 };
-                                axios.post("http://clinicadentaldocker.onrender.com/citas/solicitar", citaParaBackend, {
+                                axios.post("https://clinicadentaldocker.onrender.com/citas/solicitar", citaParaBackend, {
                                     headers: {
                                         Authorization: `Bearer ${token}`
                                     }

@@ -10,7 +10,7 @@ export const CitasProximasPaciente = () => {
     useEffect(() => {
         const token = localStorage.getItem('token');
 
-        axios.get("http://clinicadentaldocker.onrender.com/citas/proximas", {
+        axios.get("https://clinicadentaldocker.onrender.com/citas/proximas", {
             headers: {
                 Authorization: `Bearer ${token}`
             }
